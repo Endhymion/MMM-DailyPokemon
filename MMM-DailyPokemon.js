@@ -12,7 +12,7 @@ Module.register("MMM-DailyPokemon", {
 		updateInterval: 86400000, //1 Day
 		grayscale: true,//Turns pokemon image and type images gray to match magic mirror styles
 		minPoke: 1, //Default to all pokemon
-		maxPoke: 802,//Highest number - 802 pokemon currently exist
+		maxPoke: 1008,//Highest number - 802 pokemon currently exist
 		showType: true, //Shows type icons below pokemon's image
 		stats: true,  //Displays pokemon stat table
 		language: "en",
@@ -224,11 +224,11 @@ Module.register("MMM-DailyPokemon", {
 			flavorText.innerHTML = data.flavorTextDisplay ? data.flavorTextDisplay : "";
 			flavorText.id = "flavor-text";
 
-			flavorText.style.fontSize = "24px";
-			flavorText.style.lineHeight = "1.5";
+			flavorText.style.fontSize = "16px";
+			flavorText.style.lineHeight = "1";
 			if (this.config.gbaMode) {
 				flavorText.style.fontFamily = "'pokegb'";
-				flavorText.style.fontSize = "18px";
+				flavorText.style.fontSize = "12px";
 			}
 
 			flavorTextWrapper.appendChild(flavorText);
