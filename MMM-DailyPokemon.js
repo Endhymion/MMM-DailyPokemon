@@ -228,7 +228,7 @@ Module.register("MMM-DailyPokemon", {
 			flavorText.style.lineHeight = "1";
 			if (this.config.gbaMode) {
 				flavorText.style.fontFamily = "'pokegb'";
-				flavorText.style.fontSize = "12px";
+				flavorText.style.fontSize = "14px";
 			}
 
 			flavorTextWrapper.appendChild(flavorText);
